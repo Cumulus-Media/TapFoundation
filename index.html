@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Example</title>
+
+
+<!-- must have -->
+<link href="universal_video_background.css" rel="stylesheet" type="text/css">
+		
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+<script src="universal_video_background.js" type="text/javascript"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<!-- must have -->
+
+<style type="text/css">
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+	#parent {
+		position: relative;
+		z-index: 10;
+		
+	}
+
+#child {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: -9px;
+    font-size: 40px;
+    color: white;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+</style>
+
+
+
+	<script>
+		jQuery(function() {
+
+			jQuery('#universal_video_background_default').universal_video_background({
+				width: 1920,
+				height: 1200,
+				autoPlayFirstVideo:true,
+				width100Proc:true,
+				height100Proc:true,
+				responsive:true,
+				setAsBg:true,
+				showVideoControls:false,
+				bottomNavPos:'left', //left/center/right
+				showBottomNav:false,
+				showOnInitBottomNav:false,
+				initialVolume:1,
+				
+				borderWidth: 0,
+				borderColor: '#FFFFFF',	
+				
+				
+				//texturePath:'skins/patternFullScreenBg_2.png',
+							
+				thumbsBorderColorON:'#FF0000',
+				thumbsBorderColorOFF:'#000000',
+				thumbsWrapperBg:'transparent', //hexa or image
+				thumbsBgOffImgOpacity:30,
+				thumbsWrapperMarginTop:40
+				
+			});		
+			
+			
+		});
+		
+
+	</script>
+    
+    <style type="text/css">
+		html, body {
+		margin:0px;
+		padding:0px;
+		width:100%;
+		/*overflow:hidden;*/
+		}
+
+	</style>
+    
+    
+</head>
+
+<body bgcolor="#333333">
+<div id="universal_video_background_default" style="display:none;">
+	<ul class="universal_video_background_list">               
+    	<!-- <li data-bottom-thumb="images/video_background/thumbs/self_01_img.jpg" data-selfhostedMP4="videos/TAP_film.mp4" data-selfhostedWEBM="videos/TAP_film.webm"></li> -->
+    	<li data-bottom-thumb="self_01_img.jpg" data-youtube="KiLOWhcrxgo"></li>
+    	</ul>
+           </div>
+
+           
+           <div id="child">
+           		<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+           		<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+           		<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+           	</div>
+
+</body>
+</html>
