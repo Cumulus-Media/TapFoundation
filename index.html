@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>TAP Foundation</title>
+    <!-- must have -->
+    <link href="css/universal_video_background.css" rel="stylesheet" type="text/css">
+    <link href="css/site.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+    <script src="js/universal_video_background.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Flowtype.js/1.1.0/flowtype.min.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- must have -->
+    <script>
+    jQuery(function() {
+        function getOS() {
+            var ua = navigator.userAgent;
+            var uaindex;
+            var to_return;
+
+            /* determine OS*/
+            if (ua.match(/iPad/i) || ua.match(/iPhone/i)) {
+                to_return = "iOS";
+                uaindex = ua.indexOf("OS ");
+            } else if (ua.match(/Android/i)) {
+                to_return = "Android";
+                uaindex = ua.indexOf("Android ");
+            } else {
+                to_return = "unknown";
+            }
+
+            return to_return;
+
+        }
+        var my_os = getOS();
+        if (my_os == "iOS" || my_os == "Android") {
+            jQuery("#universal_video_background_default").css({
+                "display": "block"
+            });
+            jQuery("#universal_video_background_default").html('<div class="setAsBg_onlyImage" style="background-image:url(images/mobile_fallback_image.jpg);"></div>');
+        } else {
+
+            jQuery('#universal_video_background_default').universal_video_background({
+                autoPlayFirstVideo: true,
+                width100Proc: true,
+                height100Proc: true,
+                responsive: true,
+                setAsBg: true,
+                showVideoControls: false,
+                showBottomNav: false,
+                showOnInitBottomNav: false,
+                autoHideBottomNav: true,
+                bottomNavPos: 'center', //left/center/right
+                borderWidth: 0,
+                borderColor: '#FFFFFF',
+                initialVolume: 0
+            });
+        }
+    });
+
+
+
+    $('body').flowtype({
+        minimum: 500,
+        maximum: 1200,
+        minFont: 10,
+        maxFont: 60,
+        fontRatio: 30
+    });
+    </script>
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body bgcolor="#333333">
+    <div id="universal_video_background_default" style="display:none;">
+        <ul class="universal_video_background_list">
+            <li data-bottom-thumb="images/self_01_img.jpg" data-selfhostedMP4="videos/TAP_film.mp4" data-selfhostedWEBM="videos/TAP_film.webm"></li>
+            <!-- <li data-bottom-thumb="self_01_img.jpg" data-youtube="KiLOWhcrxgo"></li> -->
+        </ul>
+    </div>
+    <div id="child">
+        <h1 class="line1">A permanent solution Trans Africa Pipeline (TAP) Africa’s largest clean water project</h1>
+        <p class="line2">Please visit <a href="http://www.transafricapipeline.org" target="_blank">www.transafricapipeline.org</a> for more information.</p>
+        <p class="line3"><strong>Contacts</strong></p>
+        <p class="line4">Funding: Luke Crampton, TAP Foundation: <a href="mailto:lcrampton@transafricapipeline.org">lcrampton@transafricapipeline.org</a></p>
+        <p class="line5">Facts: Dr. Rod Tennyson, TAP: <a href="mailto:rtennyson@transafricapipeline.org">rtennyson@transafricapipeline.org</a></p>
+        <p class="line6">TAP Foundation is a registered 501(c)(3) charitable organization.</p>
+    </div>
+</body>
+
+</html>
