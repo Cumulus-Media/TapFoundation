@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TAP Foundation</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="css/umbg.css" /> -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    <style>
+    @font-face {
+        font-family: "steelfish";
+        src: url("Steelfish-Light.woff") format('woff');
+    }
+    
+    @font-face {
+        font-family: "steelfish";
+        src: url("Steelfish-Bold.woff") format('woff');
+        font-weight: bold;
+    }
+    
+    body {
+        background-color: #122642;
+        font-family: "steelfish", sans-serif;
+        color: #ffffff;
+    }
+    
+    .hero {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: table;
+        height: 100vh;
+        overflow-x: hidden;
+        position: relative;
+        width: 100%;
+    }
+    
+    .hero__arrow {
+        font-size: 60px;
+        text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+        bottom: 50px;
+        cursor: pointer;
+        height: 40px;
+        opacity: .45;
+        left: calc(50% - 20px);
+        position: absolute;
+        width: 40px;
+        transition: all 300ms ease;
+    }
+    
+    .hero__arrow:visited {
+        color: #ffffff;
+    }
+    
+    .anim-fade-down {
+        animation-fill-mode: forwards;
+        animation-name: fade-down;
+        animation-duration: 1.5s;
+        animation-timing-function: ease;
+        opacity: 40 !important;
+        transform: translateY(-20px);
+    }
+    
+    .anim--delay--2 {
+        animation-delay: 1s;
+    }
+    
+    .hero__video {
+        max-width: 100%;
+        /* overflow: hidden; */
+    }
+    
+    .hero__video video {
+        height: 100%;
+        left: 0;
+        object-fit: fill;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+    
+    
+    a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    color:#ffffff;
+}
+    
+    
+    .push--top-extra.push--top-extra {
+        margin-top: 120px;
+    }
+    
+    .text--large {
+        font-size: 40px;
+        line-height: 1.3em;
+    }
+    
+    .text--hero-large {
+        font-size: 60px;
+    }
+    
+    .text--hero {
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+    
+    .text--separator,
+    .text--hero {
+        position: relative;
+        text-align: center;
+    }
+    
+    .text--separator:after,
+    .text--hero:after {
+        border-bottom: solid 2px #fff;
+        content: '';
+        display: block;
+        margin: 44px auto;
+        max-width: 180px;
+        transform: translateX(-8px);
+        width: 50%;
+    }
+    
+    .loon-story__item {
+        font-family: "Open Sans", sans-serif;
+    }
+    
+    h2 {
+        font-size: 60px;
+    }
+    
+    h1,
+    h2 {
+        letter-spacing: 14px;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h5,
+    h6 {
+        font-family: "steelfish", sans-serif;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="page">
+		<h1 class="text-center">Hello World</h1>
+	</div> -->
+    <section class="hero">
+        <a class="anim-fade-down anim--delay--2 hero__arrow" href="#top" data-scroll="" aria-label="Scroll down" data-g-event="Arrow">
+            <i class="fa fa-fw fa-angle-down"></i>
+        </a>
+        <div class="hero__video ak-video-fallback">
+            <video autoplay loop muted>
+                <source src="tap_film_web.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <div class="container">
+        <section class="row">
+            <div class="col-lg-12 text-center">
+                <h2 id="top" class="text--hero text--hero-large">A permanent solution Trans Africa Pipeline (TAP) Africa’s largest clean water project</h2>
+            </div>
+        </section>
+        <section class="row loon-story">
+            <div class="col-lg-6">
+                <div class="loon-story__item" data-toggler="flight">
+                    <h3 class="loon-story__title">For More Information Please Visit</h3>
+                    <a href="http://www.transafricapipeline.org" target="_blank" class="linkText">www.transafricapipeline.org</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="loon-story__item" data-toggler="connection">
+                    <h3 class="loon-story__title">Contacts</h3>
+			        <p class="line4">Funding: Luke Crampton, TAP Foundation: <a href="mailto:lcrampton@transafricapipeline.org">lcrampton@transafricapipeline.org</a></p>
+			        <p class="line5">Facts: Dr. Rod Tennyson, TAP: <a href="mailto:rtennyson@transafricapipeline.org">rtennyson@transafricapipeline.org</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- 	<div id="howdy"></div>
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="jquery.umbg.js"></script>
+		
+ 		<script type="text/javascript">
+		    $('#howdy').umbg({
+		        mediaPlayerType: 'HTML5',
+		        mediaId: 'TAP_film.mp4',
+		        mediaOverlay: 0,
+		        videoQuality: 'hd1080',
+		        displayControls: 0,
+		        keyboardControls: 1,
+		        startAt: 100
+		    });
+		</script> -->
+</body>
+
+</html>
