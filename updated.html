@@ -8,7 +8,6 @@
     <title>TAP Foundation</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/umbg.css" /> -->
@@ -19,7 +18,16 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
     <style>
+        @font-face {
+        font-family: "tap";
+        src: url("fonts/tap.woff") format('woff');
+    }
     
+    @font-face {
+        font-family: "tap";
+        src: url("fonts/tapbold.woff") format('woff');
+        font-weight: bold;
+    }
     html,
     body {
         margin: 0px;
@@ -34,7 +42,7 @@
     
     body {
         background-color: #122642;
-        font-family: "Oswald", sans-serif;
+        font-family: "tap", sans-serif;
         color: #ffffff;
         font-size: 18px;
     }
@@ -256,6 +264,7 @@
         <section class="row">
             <div class="col-lg-12 text-center">
                 <h2 id="top" class="text--hero text--hero-large">
+			<div class="testingFont">Water is life</div>
                 	<div id="topText"><strong>TRANS AFRICA PIPELINE</strong></div>
                 	<div id="midText">A permanent solution to drought</div>
                 	<div id="btmText">Africa’s largest water project</div>
