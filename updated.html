@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TAP Foundation</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/umbg.css" /> -->
@@ -278,8 +278,8 @@
                 </div>
                 <div class="loon-story__item" data-toggler="connection" style="margin-bottom: 40px;">
                     <h3 class="loon-story__title">Contacts</h3>
-                    <p class="line4">Funding: Luke Crampton, TAP Foundation: <a href="mailto:lcrampton@transafricapipeline.org">lcrampton@transafricapipeline.org</a></p>
-                    <p class="line5">Facts: Dr. Rod Tennyson, TAP: <a href="mailto:rtennyson@transafricapipeline.org">rtennyson@transafricapipeline.org</a></p>
+                    <p class="line4">Funding: &nbsp;Luke Crampton &nbsp;<a href="mailto:&#108;&#099;&#114;&#097;&#109;&#112;&#116;&#111;&#110;&#064;&#116;&#114;&#097;&#110;&#115;&#097;&#102;&#114;&#105;&#099;&#097;&#112;&#105;&#112;&#101;&#108;&#105;&#110;&#101;&#046;&#111;&#114;&#103;" data-toggle="tooltip" data-placement="top" title="Click to email Luke at: &#108;&#099;&#114;&#097;&#109;&#112;&#116;&#111;&#110;&#064;&#116;&#114;&#097;&#110;&#115;&#097;&#102;&#114;&#105;&#099;&#097;&#112;&#105;&#112;&#101;&#108;&#105;&#110;&#101;&#046;&#111;&#114;&#103;"><span style=""><i class="fa fa-fw fa-envelope"></i></span></a></p>
+                    <p class="line5">Facts: &nbsp;Dr. Rod Tennyson <a href="mailto:&#114;&#116;&#101;&#110;&#110;&#121;&#115;&#111;&#110;&#064;&#116;&#114;&#097;&#110;&#115;&#097;&#102;&#114;&#105;&#099;&#097;&#112;&#105;&#112;&#101;&#108;&#105;&#110;&#101;&#046;&#111;&#114;&#103;" data-toggle="tooltip" data-placement="top" title="Click to email Rod at: &#114;&#116;&#101;&#110;&#110;&#121;&#115;&#111;&#110;&#064;&#116;&#114;&#097;&#110;&#115;&#097;&#102;&#114;&#105;&#099;&#097;&#112;&#105;&#112;&#101;&#108;&#105;&#110;&#101;&#046;&#111;&#114;&#103;">&nbsp;<span style="margin-left: 4px;"><i class="fa fa-fw fa-envelope"></i></span></a></p>
                 </div>
             </div>
         </section>
@@ -293,6 +293,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/Flowtype.js/1.1.0/flowtype.min.js" type="text/javascript"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.js" type="text/javascript"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script>
     $("#topText").fitText(1.0, {
         maxFontSize: '60px'
@@ -351,6 +352,11 @@
         $('#pauseBtn').hide();
         vid.pause();
     }
+    </script>
+	    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
     </script>
 </body>
 
